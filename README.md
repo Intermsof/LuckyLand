@@ -8,9 +8,9 @@ A <b>transaction</b> table has foreign keys (FK) to <b>Customer</b> tables, <b>I
 
 The Customer, and Factory Table has FK to an <b>Address</b> table (which models the shipping to / from addresses respectively). 
 
-The Address Table has FK to City, State, and Country tables.
+The Address Table has FK to <b>City, State, and Country</b> tables.
 
-The Transaction table has FK to an <b>ItemType></b> table.
+The Transaction table has FK to an <b>ItemType</b> table.
 
 ## OLAP Design
 There are three different dimensions in the OLAP database: <b>Customer, Factory, Item</b>. The collumns in the Address table and ItemType is de-normalized into these dimensions.
